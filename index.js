@@ -1,8 +1,11 @@
-var express = require('express')
-var app = express()
- 
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
- console.log("/")
-app.listen(3000)
+const express = require("express");
+const my_twitter = require("my_twitter");
+var app = express();
+
+app.get("/", async (req, res) => {
+  var params = { q: "nodejs" };
+  let response = await my_twitter.get("search/tweets", params);
+  res.send(response);
+});
+
+app.listen(3000);
