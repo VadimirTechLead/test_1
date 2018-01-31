@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Maven+Pro:500' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="deco topdeco">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <h1>Basic jQuery search/filter</h1>
+        <h3>
+            a quick and dirty jquery search
+        </h3>
+
+        <section class="list-wrap">
+
+            <label for="search-text">Search the list</label>
+            <input v-model="input" @change="search" type="text" id="search-text" placeholder="search" class="search-box">
+            <span class="list-count"></span>
+            <ul id="list">
+                <li v-if="!load" v-for="twitt in twitts" class="in">{{twitt.text}}</li>
+                <span v-if="status">{{status}}</span>
+            </ul>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

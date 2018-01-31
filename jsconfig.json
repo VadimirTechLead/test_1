@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "baseUrl": "./modules",
+    "target": "es2017"
+  },
+  "exclude": ["node_modules"]
+}

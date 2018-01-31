@@ -1,0 +1,29 @@
+{
+  "name": "test_1",
+  "version": "1.0.0",
+  "description": "test_1",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm i && cross-env NODE_ENV=production  NODE_PATH='./modules' node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slonik6663444/test_1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slonik6663444/test_1/issues"
+  },
+  "homepage": "https://github.com/slonik6663444/test_1#readme",
+  "dependencies": {
+    "config": "^1.29.2",
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "serve-static": "^1.13.1",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.3"
+  }
+}
