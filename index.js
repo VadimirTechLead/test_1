@@ -1,7 +1,7 @@
 const express = require("express");
 const my_twitter = require("my_twitter");
 const serveStatic = require("serve-static");
-
+const config = require("config");
 const app = express();
 
 app.use(serveStatic("public", { index: "index.html" }));
@@ -26,4 +26,4 @@ app.use(function(err, req, res, next) {
   res.status(500).send("Something broke!");
 });
 
-app.listen(3000);
+app.listen(config.server.port);
