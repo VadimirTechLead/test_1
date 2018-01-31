@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/slonik6663444/test_1#readme",
   "dependencies": {
+    "config": "^1.29.2",
     "express": "^4.16.2",
     "lodash": "^4.17.4",
     "serve-static": "^1.13.1",
